@@ -1,0 +1,8 @@
+version: '3'
+services:
+  microservice-1:
+    image: prakashjashnani25/microservice-docker-microservice-1:0.0.1-SNAPSHOT
+    environment:
+     - server.port=9092
+    ports:
+      - 8081:9092
